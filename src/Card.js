@@ -1,9 +1,12 @@
 import React from 'react';
 
-function Card() {
+export default function Card() {
+    return (
+
     <div className='Card'>
         <div className='LeftCard'>
 
         </div>
     </div>
+    );
 }

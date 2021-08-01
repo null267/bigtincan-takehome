@@ -1,0 +1,10 @@
+.Card {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.LeftCard {
+    background: linear-gradient(135deg, #F395BA 0%, #FED182 100%);
+    border-radius: 16px 0px 0px 16px;
+}
