@@ -1,4 +1,5 @@
 import React, {useState, useContext} from 'react';
+import {CardContext} from './CardContext';
 
 export default function AddCard() {
     // const [first, setFirst] = useState('');
@@ -10,10 +11,10 @@ export default function AddCard() {
     // const [corp, setCorp] = useState('');
     // const [motto, setMotto] = useState('');
     const [card, setCard] = useState({});
-    
+    const { addCard } = useContext(CardContext);
     const handleChange = (event) => {
         event.preventDefault();
-        // AddCard({first,last,email,address,phone,site,corp,motto});
+        addCard({...card, initials: card['firstName'][0].toUpperCase() + card['lastName'][0].toUpperCase(), id:id()});
         console.log(card);
     }
 

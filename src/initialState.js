@@ -1,9 +1,11 @@
 import Faker from 'faker/locale/en';
+import id from 'uuid';
 
 export default createState = () => {
     const stateList = [];
     for (let i = 0; i<15; i+=1) {
         const cardData = {};
+        cardData['id'] = id();
         cardData['avatar'] = Faker.internet.avatar(),
         cardData['firstName'] = Faker.name.firstName(),
         cardData['lastName'] = Faker.name.lastName(),
@@ -14,6 +16,7 @@ export default createState = () => {
         cardData['url'] = Faker.internet.url(),
         cardData['company'] = Faker.company.companyName(),
         cardData['phrase'] = Faker.company.catchPhrase(),
+        cardData['display'] = true;
         stateList.push(cardData);
     }
     return stateList;

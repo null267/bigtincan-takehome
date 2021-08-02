@@ -4,7 +4,7 @@ import AddCard from './AddCard';
 
 export default function Application() {
     return (
-        <div>
+        <div className="App">
            <AddCard />
            <CardList />
         </div>

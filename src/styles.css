@@ -1,10 +1,83 @@
+html {
+  background-color: gray;
+}
+
+.CardList {
+  display: flex;
+  flex-direction: column;
+}
+
 .Card {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+  display: flex;
+  background-color: white;
+  border-radius: 16px 16px 16px 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  width: 318px;
+}
+@media (min-width: 800px) {
+  .Card {
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+    width: 990px;
+  }
 }
 
 .LeftCard {
-    background: linear-gradient(135deg, #F395BA 0%, #FED182 100%);
-    border-radius: 16px 0px 0px 16px;
+  background: linear-gradient(135deg, #f395ba 0%, #fed182 100%);
+  align-self: flex-start;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px 16px 0px 0px;
+  width: 318px;
+  height: 150px;
 }
+@media (min-width: 800px) {
+  .LeftCard {
+    border-radius: 16px 0px 0px 16px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.rightCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  border-radius: 50%;
+  height: 50%;
+  width: 25%;
+}
+@media (min-width: 800px) {
+  img {
+    width: 50%;
+  }
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 1rem;
+}
+
+.Data {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
