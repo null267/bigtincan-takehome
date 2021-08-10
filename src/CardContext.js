@@ -34,14 +34,14 @@ const reducer = (state, action) => {
 export const CardProvider = ({children}) => {
     const [cards, dispatch] = useReducer(reducer, createState());
 
-    const addCard = useCallback((newCard) => {
+    const addCard = (newCard) => {
         dispatch({
             type: CARD_ADD,
             payload: {...newCard},
         });
-    }, [dispatch]);
+    };
 
-    const modCard = useCallback((index, editCard) => {
+    const modCard = (index, editCard) => {
         console.log(editCard);
         dispatch({
             type: CARD_MOD,
@@ -50,7 +50,7 @@ export const CardProvider = ({children}) => {
                 editCard,
             }
         })
-    }, [dispatch]);
+    };
 
     const value = {cards, addCard, modCard};
 

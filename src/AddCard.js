@@ -2,14 +2,7 @@ import React, {useState, useContext} from 'react';
 import {CardContext} from './CardContext';
 
 export default function AddCard() {
-    // const [first, setFirst] = useState('');
-    // const [last, setLast] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [address, setAddress] = useState('');
-    // const [phone, setPhone] = useState('');
-    // const [site, setSite] = useState('');
-    // const [corp, setCorp] = useState('');
-    // const [motto, setMotto] = useState('');
+    
     const [card, setCard] = useState({});
     const { addCard } = useContext(CardContext);
     const handleChange = (event) => {

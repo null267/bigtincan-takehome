@@ -58,13 +58,13 @@ html {
   width: 100%;
 }
 
-img {
+img.Pic {
   border-radius: 50%;
   height: 50%;
   width: 25%;
 }
 @media (min-width: 800px) {
-  img {
+  img.Pic {
     width: 50%;
   }
 }
